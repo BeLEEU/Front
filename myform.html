@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pandaIcon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css.css" />
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+    <title>熊猫问卷调查</title>
+
+
+</head>
+
+<body>
+    <h1>熊猫表单</h1>
+    <form action="" method="">
+        <label for="myname">姓名：</label>
+        <input id=myname type="text" name="InputName">
+        <br />
+        <label for="email">邮箱：</label>
+        <input id="email" type="email" name="email" required />
+        <br />
+        <label>年龄：</label>
+        <input id="age" type="number" name="age" value="18" min="0" max="120" step="5" />
+        <input type="radio" name="gender" value="male" required />
+        <input type="radio" name="gender" value="female" required />
+        <input type="radio" name="gender" value="other" required />
+        <br />
+        <input id="checkbox" type="checkbox" name="news" value="agree" checked />
+        <label for="checkbox">订阅熊猫电子报</label>
+        <br />
+        <input type="password" name="password" value="" minlength="3" maxlength="18" placeholder="请输入密码" />
+        <br />
+
+        <select name="gender" id="gender" required>
+            <option></option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <br />
+        <input type="list" list="arealist" name="list" id="area">
+        <datalist id="arealist">
+            <option value="上海">上海</option>
+            <option value="北京">北京</option>
+            <option value="广州">广州</option>
+            <option value="深圳">深圳</option>
+            <option value="杭州"></option>
+        </datalist>
+        <br />
+        <label for="suggest">给网站的建议</label>
+        <br />
+        <textarea name="suggest" id="suggest" cols="30" rows="5"></textarea>
+        <br />
+        <button type="submit">输入</button>
+
+    </form>
+</body>
+
+</html>
